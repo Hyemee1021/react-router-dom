@@ -18,12 +18,12 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/about-me" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Info />
-          <Skills />
-          <Works />
-          <About />
-          <Contact /> */}
       </div>
     </>
   );
