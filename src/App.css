@@ -287,3 +287,16 @@ header {
 .email-container i {
   color: var(--color-orange);
 }
+
+/* main */
+.main {
+  min-height: 80vh;
+}
+/* footer */
+.footer {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 3rem;
+  margin-top: 2rem;
+}

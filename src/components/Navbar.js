@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <header>
@@ -12,19 +12,19 @@ export const Navbar = () => {
         <div className="menu">
           <ul className="flex">
             <li>
-              <a href="#home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/works">Works</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about-me">About</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
