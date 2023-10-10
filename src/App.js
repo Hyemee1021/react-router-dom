@@ -7,6 +7,7 @@ import { Skills } from "./components/Skills";
 import { Works } from "./components/Works";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
@@ -16,14 +17,13 @@ function App() {
           <i class="fa-solid fa-circle-half-stroke"></i>
         </label>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/about-me" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Hero />
+        <Info />
+        <Skills />
+        <Works />
+        <About />
+        <Contact />
+        <Footer />
       </div>
     </>
   );

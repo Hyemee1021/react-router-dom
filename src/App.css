@@ -287,3 +287,8 @@ header {
 .email-container i {
   color: var(--color-orange);
 }
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
