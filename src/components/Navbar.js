@@ -12,7 +12,7 @@ export const Navbar = () => {
         <div className="menu">
           <ul className="flex">
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/skills">Skills</Link>
@@ -22,6 +22,9 @@ export const Navbar = () => {
             </li>
             <li>
               <Link to="/about-me">About</Link>
+            </li>
+            <li>
+              <Link to="/info">Info</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
