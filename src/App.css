@@ -5,7 +5,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+.wrapper {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -291,4 +294,134 @@ header {
   background: #000;
   color: #fff;
   text-align: center;
+}
+
+.hamburger {
+  display: none;
+}
+/* media query */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navigation ul {
+    /* display: none; */
+
+    flex-direction: column;
+    position: fixed;
+    width: 15rem;
+    left: 100%;
+    /* left: calc(100% - 15rem); */
+    transition: all 0.5s ease-in;
+    height: 100vh;
+    background: var(--body-bg);
+    box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.2);
+  }
+  .navigation ul li {
+    padding-left: 1rem;
+    line-height: 3rem;
+    font-weight: bold;
+  }
+  /* .slide */
+
+  .navigation ul.slide {
+    left: calc(100% - 15rem);
+  }
+
+  /* /+hero */
+  .hero {
+    grid-template-areas:
+      "right"
+      "left";
+
+    padding-bottom: 2rem;
+  }
+  .hero .right {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero .right img {
+    width: 80%;
+  }
+
+  /* /+banner */
+  .banner {
+    width: 10rem;
+    flex-direction: column;
+    border-radius: 6rem;
+    padding: 5rem 0;
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+    .info-divider {
+      display: none;
+    }
+
+    .info-content {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .skills > div {
+    flex-direction: column;
+  }
+
+  .skills h2 {
+    margin-bottom: 0;
+  }
+  .skills > div div {
+    margin-top: 2rem;
+  }
+  .skills > div div:nth-child(1) {
+    margin-top: 0;
+  }
+
+  /*project -work  */
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card .social-container i {
+    font-size: 3rem;
+  }
+
+  /* about */
+
+  .about > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left {
+    display: flex;
+  }
+  .about .tag {
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+  }
+
+  .about .interests {
+    justify-content: center;
+  }
+  /* contact */
+  .socials {
+    justify-content: space-evenly;
+  }
+
+  .socials a i {
+    font-size: 4rem;
+  }
+
+  /* email */
+  .email-container {
+    width: 90%;
+  }
+  .email-container input {
+    width: 90%;
+    height: 3rem;
+  }
 }

@@ -10,7 +10,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 function App() {
   return (
-    <>
+    <div className="wrapper">
       <input type="checkbox" id="darkMode" />
       <div className="wrapper">
         <label htmlFor="darkMode" className="dark-mode-toggle">
@@ -25,7 +25,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

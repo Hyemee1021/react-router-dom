@@ -12,12 +12,14 @@ export const Works = () => {
           <div className="bottom container">
             <h3>Personal portfolio website</h3>
             <p>October 2023</p>
-            <a href="">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              <i className="fa-brands fa-chrome"></i>
-            </a>
+            <div className="flex social-container">
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-chrome"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="project-card">
@@ -27,12 +29,14 @@ export const Works = () => {
           <div className="bottom container">
             <h3>E-Commerce website</h3>
             <p>October 2023</p>
-            <a href="">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              <i className="fa-brands fa-chrome"></i>
-            </a>
+            <div className="flex social-container">
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-chrome"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="project-card">
@@ -42,12 +46,14 @@ export const Works = () => {
           <div className="bottom container">
             <h3>CMS System</h3>
             <p>October 2023</p>
-            <a href="">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              <i className="fa-brands fa-chrome"></i>
-            </a>
+            <div className="flex social-container">
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-chrome"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="project-card">
@@ -57,12 +63,14 @@ export const Works = () => {
           <div className="bottom container">
             <h3>SaaS</h3>
             <p>October 2023</p>
-            <a href="">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              <i className="fa-brands fa-chrome"></i>
-            </a>
+            <div className="flex social-container">
+              <a href="">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-chrome"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
